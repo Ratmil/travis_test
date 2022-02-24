@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+	<data>
+		<record id="travis_test_form_view_action" model="ir.actions.act_window">
+			<field name="name">Deep Learning Data</field>
+			<field name="res_model">travis.test</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem id="travis_test_main_menu" name="Travis Test"/>
+		<menuitem id="travis_test_top_menu" name="Travis" parent="travis_test_main_menu" sequence="1"/>
+		<menuitem id="travis_test_menu" name="Travis"
+			parent="travis_test_top_menu" action="travis_test_form_view_action" sequence="1"
+		/>
+	</data>
+</openerp>
