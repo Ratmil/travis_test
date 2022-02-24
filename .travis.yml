@@ -26,7 +26,7 @@ install:
   - unzip odoo.zip
   - sudo mv odoo-8.0-20171001 /opt/openerp/odoo
   - sudo mkdir /opt/openerp/odoo/data
-  - sudo chown -R openerp: /opt/openerp/odoo/data
+  - sudo chown -R openerp /opt/openerp/odoo/data
 # command to run tests
 script:
   - sudo -u openerp /opt/openerp/odoo/openerp-server -d odoo -r openerp --addons-path=/home/travis/build/Ratmil -i travis_test --test-enable --stop-after-init -D /opt/openerp/odoo/data
