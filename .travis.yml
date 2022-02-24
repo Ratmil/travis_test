@@ -37,9 +37,12 @@ install:
   - sudo chown -R openerp /opt/openerp/odoo/data
   - sudo mkdir /opt/openerp/addons
   - sudo cp -r /home/travis/build/Ratmil/* /opt/openerp/addons
+  - ls /opt/openerp/addons
   - sudo chown -R openerp /opt/openerp/addons
   - sudo ls /opt/openerp/addons
   
 # command to run tests
 script:
   - sudo -u openerp /opt/openerp/odoo/openerp-server -d odoo_test -r openerp --addons-path=/opt/openerp/addons -i travis_test --test-enable --stop-after-init -D /opt/openerp/odoo/data
+  - retval = \$?
+  - echo retval
