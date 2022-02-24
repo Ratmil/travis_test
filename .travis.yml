@@ -25,6 +25,7 @@ before_script:
 install:
 # Install Odoo dependencies
   - wget --no-check-certificate http://pybrary.net/pyPdf/pyPdf-1.13.zip
+  - unzip pyPdf-1.13.zip
   - cd pyPdf-1.13
   - python setup.py install
   - cd ..
