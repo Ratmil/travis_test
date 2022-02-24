@@ -37,7 +37,7 @@ install:
   - sudo chown -R openerp /opt/openerp/odoo/data
   - sudo mkdir /opt/openerp/addons
   - sudo cp -r /home/travis/build/Ratmil/* /opt/openerp/addons
-  - mv /opt/openerp/addons/travis_test /opt/openerp/addons/travis
+  - sudo mv /opt/openerp/addons/travis_test /opt/openerp/addons/travis
   - sudo chown -R openerp /opt/openerp/addons
   - sudo ls /opt/openerp/addons
   
