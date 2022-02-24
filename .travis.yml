@@ -6,4 +6,4 @@ install:
   - echo "Installing"
 # command to run tests
 script:
-  - pytest p.py
+  - echo "Testing"
