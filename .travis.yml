@@ -4,10 +4,10 @@ python:
   - "2.7"
 
 before_install:
-  - wget --no-check-certificate http://pybrary.net/pyPdf/pyPdf-1.13.zip
-  - unzip pyPdf-1.13.zip
-  - cd pyPdf-1.13
-  - python setup.py install
+  - sudo wget --no-check-certificate http://pybrary.net/pyPdf/pyPdf-1.13.zip
+  - sudo unzip pyPdf-1.13.zip
+  - sudo cd pyPdf-1.13
+  - sudo ./setup.py install
   - cd ..
   - sudo apt-get install python-dateutil python-docutils python-feedparser python-jinja2 python-ldap python-libxslt1 python-lxml python-mako python-mock python-openid python-psycopg2 python-psutil python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi poppler-utils python-pip python-passlib python-decorator
   # - sudo apt-get install python-pyPdf
