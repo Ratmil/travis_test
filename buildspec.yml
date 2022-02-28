@@ -3,4 +3,4 @@ phases:
   build:
     commands:
       - pwd
-      - echo "Building
+      - echo "Building"
