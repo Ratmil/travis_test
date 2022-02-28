@@ -5,4 +5,4 @@ phases:
       - pwd
       - echo "Building"
       - echo "Error"
-      - echo "Still Building
+      - echo "Still Building"
